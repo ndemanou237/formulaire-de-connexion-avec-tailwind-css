@@ -4,16 +4,29 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Formulaire</title>
+    <link rel="stylesheet" href="src/output.css">
 </head>
-<body class="bg-black text-white">
-    <section>
-        <div class="">
-            <h1>WELCOME BACK !</h1>
+<body class="bg-black text-white flex justify-center items-center h-screen ">
+    <section class="flex gap-12 border-2 border-violet-500 shadow-2xl  shadow-violet-500/50 items-center rounded-2xl h-[60vh]">
+        <div class="bg-violet-700 h-full flex items-center px-22 rounded-2xl">
+            <h1 class="font-bold ">WELCOME BACK !</h1>
         </div>
-        <div>
-            <h1>Sign Up</h1>
-            
-        </div>
+        <!-- <div class="absolute left-[37%] w-[180px] h-[505px]   bg-[#6f22ff] [clip-path:polygon(100%_0,0%_100%,15%_100%,100%_0)]"></div> -->
+        
+        <form id="clicked" class="flex flex-col space-y-4 p-12 h-[60vh] ">
+            <h1 class="font-bold text-2xl ">Sign Up</h1>
+            <input type="text" class="myinput" placeholder="Full Name">
+            <input type="text" class="myinput" placeholder="Username">
+            <input type="email" id="email" class="myinput" placeholder="Email">
+            <span id="erroremail" class="text-red-500"></span>
+            <input type="password" class="myinput" placeholder="password" id="password1">
+            <span id="pas" class="text-red-500 font-medium "></span>
+            <input type="password" class="myinput" placeholder="confirm password" id="password2">
+            <span id="pass" class="text-red-500 font-medium "></span>
+            <button type="submit" class="border-2 bg-blue-500 font-bold p-1 border-blue-500 rounded-2xl cursor-pointer " >S'inscrire</button>
+        </form>
     </section>
+
+    <script src="script.js"></script>
 </body>
 </html>
